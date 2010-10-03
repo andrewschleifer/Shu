@@ -1,0 +1,5 @@
+.DS_Store
+[Bb]uild
+*.xcodeproj/*.mode*
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.perspective*

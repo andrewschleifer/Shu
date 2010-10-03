@@ -1,0 +1,6 @@
+
+@interface BTransparentWindow : NSWindow {
+
+}
+
+@end

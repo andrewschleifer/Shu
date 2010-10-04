@@ -31,4 +31,13 @@
 	hitLocation = dragLocation;
 }
 
+-(void)mouseUp:(NSEvent *)event
+{
+	if([event clickCount] == 2)
+		[[NSWorkspace sharedWorkspace] launchAppWithBundleIdentifier:@"com.apple.mail"
+															 options:NSWorkspaceLaunchDefault
+									  additionalEventParamDescriptor:nil
+													launchIdentifier:NULL];
+}
+
 @end

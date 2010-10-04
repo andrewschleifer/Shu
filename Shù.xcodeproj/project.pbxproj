@@ -13,6 +13,8 @@
 		EB136D2B125837A200AF32B6 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB136D2A125837A100AF32B6 /* ScriptingBridge.framework */; };
 		EB136E031259035300AF32B6 /* BTransparentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EB136E021259035300AF32B6 /* BTransparentWindow.m */; };
 		EB136E2E125909EB00AF32B6 /* Shù.opacity in Resources */ = {isa = PBXBuildFile; fileRef = EB136E2D125909EA00AF32B6 /* Shù.opacity */; };
+		EB76C10A125986A7001F2296 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB76C109125986A7001F2296 /* WebKit.framework */; };
+		EB76C15312598E88001F2296 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = EB76C15212598E88001F2296 /* Credits.html */; };
 		EBADE5661257BE1C007D020B /* Shù.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBADE5651257BE1C007D020B /* Shù.xib */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +45,8 @@
 		EB136E011259035300AF32B6 /* BTransparentWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTransparentWindow.h; sourceTree = "<group>"; };
 		EB136E021259035300AF32B6 /* BTransparentWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTransparentWindow.m; sourceTree = "<group>"; };
 		EB136E2D125909EA00AF32B6 /* Shù.opacity */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shù.opacity"; sourceTree = "<group>"; };
-		EB136EB212591DC700AF32B6 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		EB76C109125986A7001F2296 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		EB76C15212598E88001F2296 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		EBADE5651257BE1C007D020B /* Shù.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Shù.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +57,7 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				EB136D2B125837A200AF32B6 /* ScriptingBridge.framework in Frameworks */,
+				EB76C10A125986A7001F2296 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,7 @@
 				8D1107310486CEB800E47090 /* Shù-Info.plist */,
 				EBADE5651257BE1C007D020B /* Shù.xib */,
 				EB136E2D125909EA00AF32B6 /* Shù.opacity */,
+				EB76C15212598E88001F2296 /* Credits.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 				EB136D2A125837A100AF32B6 /* ScriptingBridge.framework */,
+				EB76C109125986A7001F2296 /* WebKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,6 +172,7 @@
 			files = (
 				EBADE5661257BE1C007D020B /* Shù.xib in Resources */,
 				EB136E2E125909EB00AF32B6 /* Shù.opacity in Resources */,
+				EB76C15312598E88001F2296 /* Credits.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

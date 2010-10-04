@@ -13,9 +13,10 @@
 		EB136D2B125837A200AF32B6 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB136D2A125837A100AF32B6 /* ScriptingBridge.framework */; };
 		EB136E031259035300AF32B6 /* BTransparentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EB136E021259035300AF32B6 /* BTransparentWindow.m */; };
 		EB136E2E125909EB00AF32B6 /* Shù.opacity in Resources */ = {isa = PBXBuildFile; fileRef = EB136E2D125909EA00AF32B6 /* Shù.opacity */; };
+		EB190472125A1582000F2D35 /* Main.icns in Resources */ = {isa = PBXBuildFile; fileRef = EB190471125A1582000F2D35 /* Main.icns */; };
 		EB76C10A125986A7001F2296 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB76C109125986A7001F2296 /* WebKit.framework */; };
 		EB76C15312598E88001F2296 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = EB76C15212598E88001F2296 /* Credits.html */; };
-		EBADE5661257BE1C007D020B /* Shù.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBADE5651257BE1C007D020B /* Shù.xib */; };
+		EBADE5661257BE1C007D020B /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBADE5651257BE1C007D020B /* Main.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -45,9 +46,10 @@
 		EB136E011259035300AF32B6 /* BTransparentWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTransparentWindow.h; sourceTree = "<group>"; };
 		EB136E021259035300AF32B6 /* BTransparentWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTransparentWindow.m; sourceTree = "<group>"; };
 		EB136E2D125909EA00AF32B6 /* Shù.opacity */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Shù.opacity"; sourceTree = "<group>"; };
+		EB190471125A1582000F2D35 /* Main.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Main.icns; sourceTree = "<group>"; };
 		EB76C109125986A7001F2296 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		EB76C15212598E88001F2296 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
-		EBADE5651257BE1C007D020B /* Shù.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Shù.xib"; sourceTree = "<group>"; };
+		EBADE5651257BE1C007D020B /* Main.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Main.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				8D1107310486CEB800E47090 /* Shù-Info.plist */,
-				EBADE5651257BE1C007D020B /* Shù.xib */,
+				EBADE5651257BE1C007D020B /* Main.xib */,
 				EB136E2D125909EA00AF32B6 /* Shù.opacity */,
 				EB76C15212598E88001F2296 /* Credits.html */,
+				EB190471125A1582000F2D35 /* Main.icns */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -170,9 +173,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBADE5661257BE1C007D020B /* Shù.xib in Resources */,
+				EBADE5661257BE1C007D020B /* Main.xib in Resources */,
 				EB136E2E125909EB00AF32B6 /* Shù.opacity in Resources */,
 				EB76C15312598E88001F2296 /* Credits.html in Resources */,
+				EB190472125A1582000F2D35 /* Main.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

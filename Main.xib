@@ -60,7 +60,7 @@
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="637460492">
-					<nil key="NSNextResponder"/>
+					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -81,6 +81,7 @@
 							</object>
 							<string key="NSFrame">{{12, 12}, {100, 100}}</string>
 							<reference key="NSSuperview" ref="637460492"/>
+							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSImageCell" key="NSCell" id="248269363">
 								<int key="NSCellFlags">130560</int>
@@ -90,7 +91,7 @@
 									<string key="NSResourceName">Shù.pdf</string>
 								</object>
 								<int key="NSAlign">0</int>
-								<int key="NSScale">2</int>
+								<int key="NSScale">0</int>
 								<int key="NSStyle">0</int>
 								<bool key="NSAnimates">NO</bool>
 							</object>
@@ -101,6 +102,7 @@
 							<int key="NSvFlags">258</int>
 							<string key="NSFrame">{{4, 44}, {116, 37}}</string>
 							<reference key="NSSuperview" ref="637460492"/>
+							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="195456035">
 								<int key="NSCellFlags">605158976</int>
@@ -132,10 +134,13 @@
 							<int key="NSvFlags">268</int>
 							<string key="NSFrameSize">{125, 125}</string>
 							<reference key="NSSuperview" ref="637460492"/>
+							<reference key="NSWindow"/>
 							<string key="NSClassName">NSView</string>
 						</object>
 					</object>
 					<string key="NSFrameSize">{125, 125}</string>
+					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>
@@ -179,7 +184,7 @@
 				<nil key="NSViewClass"/>
 				<string key="NSWindowContentMaxSize">{3.40282e+38, 3.40282e+38}</string>
 				<object class="NSView" key="NSWindowView" id="28114237">
-					<reference key="NSNextResponder"/>
+					<nil key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
 					<object class="NSMutableArray" key="NSSubviews">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -209,7 +214,6 @@
 							</object>
 							<string key="NSFrameSize">{300, 272}</string>
 							<reference key="NSSuperview" ref="28114237"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
 							<string key="FrameName"/>
 							<string key="GroupName"/>
@@ -236,8 +240,6 @@
 						</object>
 					</object>
 					<string key="NSFrameSize">{300, 272}</string>
-					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
 				<string key="NSMaxSize">{3.40282e+38, 3.40282e+38}</string>

@@ -4,11 +4,13 @@
 
 @implementation BApplicationDelegate
 
+
 @synthesize mailapp;
 @synthesize display;
 @synthesize creditsView;
 @synthesize aboutPanel;
 @synthesize window;
+
 
 - (void) applicationDidFinishLaunching: (NSNotification *) aNotification
 {
@@ -28,11 +30,13 @@
 							   baseURL:nil];
 }
 
+
 - (IBAction) showAboutPanel: (id) sender
 {
 	[aboutPanel center];
 	[aboutPanel makeKeyAndOrderFront:self];
 }
+
 
 - (void) update: (NSTimer *) timer
 {
@@ -45,5 +49,6 @@
 	NSInteger count = [[mailapp inbox] unreadCount];
 	self.display = [NSString stringWithFormat:@"%d", count];
 }
+
 
 @end

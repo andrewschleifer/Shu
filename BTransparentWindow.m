@@ -3,6 +3,7 @@
 
 @implementation BTransparentWindow
 
+
 - (id) initWithContentRect: (NSRect) contentRect styleMask: (NSUInteger) windowStyle backing: (NSBackingStoreType) bufferingType defer: (BOOL) deferCreation
 {
     if (![super initWithContentRect:contentRect
@@ -18,10 +19,12 @@
     return self;
 }
 
--(void)mouseDown:(NSEvent *)event
+
+- (void) mouseDown: (NSEvent *) event
 {
 	_hitLocation = [NSEvent mouseLocation];
 }
+
 
 - (void) mouseDragged: (NSEvent *) event
 {
@@ -31,6 +34,7 @@
 									 self.frame.origin.y + dragLocation.y - _hitLocation.y)];
 	_hitLocation = dragLocation;
 }
+
 
 - (void) mouseUp: (NSEvent *) event
 {

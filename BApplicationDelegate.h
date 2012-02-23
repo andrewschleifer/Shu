@@ -13,7 +13,7 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (copy) NSString *display;
 
--(IBAction)showAboutPanel:(id)sender;
--(void)update:(NSTimer *)timer;
+- (IBAction) showAboutPanel: (id) sender;
+- (void) update: (NSTimer *) timer;
 
 @end

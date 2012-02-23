@@ -22,7 +22,7 @@
 	hitLocation = [NSEvent mouseLocation];
 }
 
--(void)mouseDragged:(NSEvent *)event
+- (void) mouseDragged: (NSEvent *) event
 {
 	NSPoint dragLocation = [NSEvent mouseLocation];
 
@@ -31,7 +31,7 @@
 	hitLocation = dragLocation;
 }
 
--(void)mouseUp:(NSEvent *)event
+- (void) mouseUp: (NSEvent *) event
 {
 	if([event clickCount] == 2)
 		[[NSWorkspace sharedWorkspace] launchAppWithBundleIdentifier:@"com.apple.mail"

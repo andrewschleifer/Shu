@@ -10,7 +10,7 @@
 @synthesize window;
 @synthesize display;
 
--(void)applicationDidFinishLaunching:(NSNotification *)aNotification
+- (void) applicationDidFinishLaunching: (NSNotification *) aNotification
 {
 	window.level = NSScreenSaverWindowLevel + 2000;
 	mail = [SBApplication applicationWithBundleIdentifier:@"com.apple.mail"];
@@ -28,13 +28,13 @@
 						  baseURL:nil];
 }
 
--(IBAction)showAboutPanel:(id)sender
+- (IBAction) showAboutPanel: (id) sender
 {
 	[about center];
 	[about makeKeyAndOrderFront:self];
 }
 
--(void)update:(NSTimer *)timer
+- (void) update: (NSTimer *) timer
 {
 	if(![mail isRunning])
 	{

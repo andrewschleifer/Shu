@@ -1,10 +1,11 @@
 @class MailApplication;
 @class WebView;
 
-@interface BApplicationDelegate : NSObject <NSApplicationDelegate> {
 	WebView *credits;
 	NSWindow *about;
     NSWindow *window;
+@interface BApplicationDelegate : NSObject <NSApplicationDelegate>
+{
 	MailApplication *mailapp;
 	NSString *display;
 }

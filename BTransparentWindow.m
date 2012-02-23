@@ -3,7 +3,7 @@
 
 @implementation BTransparentWindow
 
--(id)initWithContentRect:(NSRect)contentRect styleMask:(NSUInteger)windowStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)deferCreation
+- (id) initWithContentRect: (NSRect) contentRect styleMask: (NSUInteger) windowStyle backing: (NSBackingStoreType) bufferingType defer: (BOOL) deferCreation
 {
     if (![super initWithContentRect:contentRect
 						  styleMask:NSBorderlessWindowMask

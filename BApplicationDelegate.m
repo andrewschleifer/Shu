@@ -8,12 +8,13 @@
 @synthesize credits;
 @synthesize about;
 @synthesize window;
+@synthesize mailapp;
 @synthesize display;
 
 - (void) applicationDidFinishLaunching: (NSNotification *) aNotification
 {
 	window.level = NSScreenSaverWindowLevel + 2000;
-	mail = [SBApplication applicationWithBundleIdentifier:@"com.apple.mail"];
+	mailapp = [SBApplication applicationWithBundleIdentifier:@"com.apple.mail"];
 	[NSTimer scheduledTimerWithTimeInterval:0.5
 									 target:self
 								   selector:@selector(update:)
@@ -36,13 +37,13 @@
 
 - (void) update: (NSTimer *) timer
 {
-	if(![mail isRunning])
+	if(![mailapp isRunning])
 	{
 		self.display = @"⚠";
 		return;
 	}
 
-	NSInteger count = [[mail inbox] unreadCount];
+	NSInteger count = [[mailapp inbox] unreadCount];
 	self.display = [NSString stringWithFormat:@"%d", count];
 }
 

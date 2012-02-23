@@ -13,6 +13,7 @@
 
     [self setBackgroundColor: [NSColor clearColor]];
     [self setOpaque:NO];
+    [self setCollectionBehavior:NSWindowCollectionBehaviorCanJoinAllSpaces];
 
     return self;
 }

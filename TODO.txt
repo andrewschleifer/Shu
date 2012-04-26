@@ -1,0 +1,2 @@
+The window should become oval-shaped when the number exceeds three digits
+Crashes when built with Lion compiler

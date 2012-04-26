@@ -8,7 +8,7 @@
 	NSString *display;
 	WebView *creditsView;
 	NSWindow *aboutPanel;
-    NSWindow *window;
+	NSWindow *window;
 }
 
 @property (retain) MailApplication *mailapp;

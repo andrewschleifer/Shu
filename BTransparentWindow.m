@@ -1,8 +1,14 @@
 
 #import "BTransparentWindow.h"
 
+@interface BTransparentWindow ()
+@property (assign) NSPoint hitLocation;
+@end
+
+
 @implementation BTransparentWindow
 
+@synthesize hitLocation;
 
 - (id) initWithContentRect: (NSRect) contentRect styleMask: (NSUInteger) windowStyle backing: (NSBackingStoreType) bufferingType defer: (BOOL) deferCreation
 {
@@ -22,7 +28,7 @@
 
 - (void) mouseDown: (NSEvent *) event
 {
-    _hitLocation = [NSEvent mouseLocation];
+    self.hitLocation = [NSEvent mouseLocation];
 }
 
 
@@ -30,9 +36,9 @@
 {
     NSPoint dragLocation = [NSEvent mouseLocation];
 
-    [self setFrameOrigin:NSMakePoint(self.frame.origin.x + dragLocation.x - _hitLocation.x,
-                                     self.frame.origin.y + dragLocation.y - _hitLocation.y)];
-    _hitLocation = dragLocation;
+    [self setFrameOrigin:NSMakePoint(self.frame.origin.x + dragLocation.x - self.hitLocation.x,
+                                     self.frame.origin.y + dragLocation.y - self.hitLocation.y)];
+    self.hitLocation = dragLocation;
 }
 
 

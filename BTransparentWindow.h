@@ -1,7 +1,3 @@
 
-@interface BTransparentWindow : NSWindow {
-    @private
-        NSPoint _hitLocation;
-}
-
+@interface BTransparentWindow : NSWindow {}
 @end

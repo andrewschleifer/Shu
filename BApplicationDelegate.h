@@ -2,14 +2,7 @@
 @class MailApplication;
 @class WebView;
 
-@interface BApplicationDelegate : NSObject <NSApplicationDelegate>
-{
-    MailApplication *mailapp;
-    NSString *display;
-    WebView *creditsView;
-    NSWindow *aboutPanel;
-    NSWindow *window;
-}
+@interface BApplicationDelegate : NSObject <NSApplicationDelegate> {}
 
 @property (retain) MailApplication *mailapp;
 @property (copy) NSString *display;

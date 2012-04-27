@@ -15,7 +15,7 @@
 - (void) applicationDidFinishLaunching: (NSNotification *) aNotification
 {
 	window.level = NSScreenSaverWindowLevel + 2000;
-	mailapp = [SBApplication applicationWithBundleIdentifier:@"com.apple.mail"];
+	self.mailapp = [SBApplication applicationWithBundleIdentifier:@"com.apple.mail"];
 	[NSTimer scheduledTimerWithTimeInterval:0.5
 									 target:self
 								   selector:@selector(update:)
@@ -24,7 +24,7 @@
 	NSString *creditsPath = [[NSBundle mainBundle] pathForResource:@"Credits"
 															ofType:@"html"];
 	NSData *creditsData = [NSData dataWithContentsOfFile:creditsPath];
-	[creditsView.mainFrame loadData:creditsData
+	[self.creditsView.mainFrame loadData:creditsData
 							  MIMEType:@"text/html"
 					  textEncodingName:@"UTF-8"
 							   baseURL:nil];
@@ -33,20 +33,20 @@
 
 - (IBAction) showAboutPanel: (id) sender
 {
-	[aboutPanel center];
-	[aboutPanel makeKeyAndOrderFront:self];
+	[self.aboutPanel center];
+	[self.aboutPanel makeKeyAndOrderFront:self];
 }
 
 
 - (void) update: (NSTimer *) timer
 {
-	if(![mailapp isRunning])
+	if(![self.mailapp isRunning])
 	{
 		self.display = @"⚠";
 		return;
 	}
 
-	NSInteger count = [[mailapp inbox] unreadCount];
+	NSInteger count = [[self.mailapp inbox] unreadCount];
 	self.display = [NSString stringWithFormat:@"%d", count];
 }
 

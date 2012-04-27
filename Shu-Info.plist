@@ -9,7 +9,7 @@
 	<key>CFBundleIconFile</key>
 	<string>Main</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.mutant-atomic.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.labs-insect.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -24,11 +24,11 @@
 	<string>1.1</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
+	<key>LSUIElement</key>
+	<true/>
 	<key>NSMainNibFile</key>
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>LSUIElement</key>
-	<true/>
 </dict>
 </plist>

@@ -1,5 +1,5 @@
 
-About Shù
+About Shu
 ---------
 
 This application collects information about your email inbox – specifically,
@@ -13,7 +13,7 @@ Questions
 ---------
 
 Q. Why does it only display an exclamation point?
-A. The Mail application must be running for Shù to collect the information it needs.
+A. The Mail application must be running for Shu to collect the information it needs.
 Double-click the notification window to launch Mail, then hide or minimize it.
 
 Q. How do I quit?

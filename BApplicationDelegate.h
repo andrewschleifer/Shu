@@ -4,10 +4,10 @@
 
 @interface BApplicationDelegate : NSObject <NSApplicationDelegate>
 {
-	MailApplication *mailapp;
-	NSString *display;
-	WebView *creditsView;
-	NSWindow *aboutPanel;
+    MailApplication *mailapp;
+    NSString *display;
+    WebView *creditsView;
+    NSWindow *aboutPanel;
     NSWindow *window;
 }
 

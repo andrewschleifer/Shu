@@ -47,7 +47,7 @@
     }
 
     NSInteger count = [[self.mailapp inbox] unreadCount];
-    self.display = [NSString stringWithFormat:@"%d", count];
+    self.display = [NSString stringWithFormat:@"%ld", count];
 }
 
 

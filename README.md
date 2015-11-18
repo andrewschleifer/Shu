@@ -22,3 +22,6 @@ option.
 
 Q. Does it work with Thunderbird (or other email client)?  
 A. No, only Apple Mail.
+
+Q. What does it look like?  
+A. ![Screen Shot](/../images/screen-shot.png?raw=true "Screen Shot")
